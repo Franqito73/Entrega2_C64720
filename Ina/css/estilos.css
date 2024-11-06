@@ -1,0 +1,338 @@
+/* Reseteo */
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/*Fuentes archivo local*/
+
+@font-face{
+  font-family: Roboto-Medium;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+/* Barra de navegación */
+
+nav{
+  background-color: #ffffff;
+  color: white;
+  padding: 0 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav .logo{
+  float: left;
+  padding: 0.4em 0;
+  margin-top: 10px;
+}
+
+nav .logo img{
+  height: 2em;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0;
+  line-height: 3em;
+  font-family: Roboto-Medium;
+}
+
+nav ul li a:hover{
+  color: grey;
+}
+
+/* Contenedor del video */
+
+#video-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+video{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+  
+/* Encabezado y botón */
+
+.encabezado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 3;
+}
+
+.logo-overlay{
+  height: 5em;
+  filter: invert(100%);
+  margin-bottom: 1.3em;
+}
+
+.encabezado h1{
+  font-size: 3em; 
+  margin-bottom: 15px;
+  font-family: Roboto-Medium;
+}
+
+.encabezado button{
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #000000;
+  color:white;
+  border-radius: 10px;
+  cursor: pointer; 
+  font-family: Roboto-Medium;
+}
+
+.encabezado button:hover{
+  background-color: grey;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2
+}
+
+/* Productos */
+
+.productos{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.productos h2{
+  font-family: Roboto-Medium;
+}
+
+/* Cuadrados */
+.cuadrado {
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  font-family: Roboto-Medium;
+}
+
+.cuadrado img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.cuadrado h3{
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.cuadrado p{
+  font-size: 1rem;
+  color: #000000;
+  font-family: Roboto-Medium;
+}
+
+h2{
+  font-family: Roboto-Medium;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+/*Seccion Info*/
+
+.info{
+  background-color: #c0c0c0;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: Roboto-Medium;
+  margin-bottom: 20px;
+}
+
+/* Banner */
+
+.banner{
+  text-align: center;
+  margin: 20px auto;
+  width: 95%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white; 
+  padding: 20px 0;
+  font-family: Roboto-Medium;
+  text-align: center;
+}
+
+.pie-de-pagina {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+}
+
+
+.pie-de-pagina li {
+  display: inline; 
+  margin: 0 15px;
+}
+
+.pie-de-pagina a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer h4 {
+  margin-top: 15px;
+  color: white;
+}
+
+/*Formulario*/
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Roboto-Medium;
+  margin-bottom: 40px;
+}
+
+legend {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input[type="text"], input[type="email"], textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #7a7a7a; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+textarea{
+  height: 150px;
+}
+
+.botons{
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.botons:hover{
+  background-color: #999;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #999;
+}
+
+/*Preguntas*/
+
+.contenedor-preguntas{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.contenedor-preguntas h2{
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 35px;
+  font-family: Roboto-Medium;
+}
+
+.desplegable{
+  background: white;
+}
+
+.desplegable label{
+  display: block;
+  padding: 20px;
+  font-size: 1.2em;
+  font-family: Roboto-Medium;
+  background: #000000;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+
+.desplegable label:hover{
+  background-color: #999;
+}
+
+.desplegable .contenido-desplegable{
+  padding: 0;
+  margin: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.btn-desplegable{
+  display: none;
+}
